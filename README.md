@@ -2,7 +2,7 @@
 
 This is the official code for our accepted CIKM 2025 paper: <br>[`LLM-Enhanced Linear Autoencoders for Recommendation`](https://arxiv.org/abs/2305.12922).</br>
 
-The slides can be found [here](https://drive.google.com/file/d/1gW-E8iFiUScBBs_N7QEIjEsYlyRr2jrG/view?usp=sharing).
+The slides can be found [here](https://drive.google.com/file/d/1gW-E8iFiUScBBs_N7QEIjEsYlyRr2jrG/view?usp=sharing), and a summary is on [our lab blog](https://dial.skku.edu/blog/2025_l3ae) (in Korean).
 
 ## Citation
 
