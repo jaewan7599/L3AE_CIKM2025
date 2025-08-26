@@ -61,7 +61,8 @@ sh script/Table4_best_param_qwen3-embedding-8b_toys.sh
 sh script/Table4_best_param_qwen3-embedding-8b_books.sh
 ```
 
-#### Arguments (See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` or `encoder/config/linear_configurator.py`)
+#### Arguments
+- See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` or `encoder/config/linear_configurator.py`.
 - dataset: games, toys, and books (amazon 2023 datasets)
 - linear models
     - EASE, GF-CF, BSPM, SGFCF, Collective EASE, Addictive EASE, and **L^3AE**
