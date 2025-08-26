@@ -5,7 +5,6 @@ This is the official code for our accepted CIKM 2025 paper: <br>[`LLM-Enhanced L
 The slides can be found [here](https://drive.google.com/file/d/1gW-E8iFiUScBBs_N7QEIjEsYlyRr2jrG/view?usp=sharing), and a summary is on [our lab blog](https://dial.skku.edu/blog/2025_l3ae) (in Korean).
 
 ## Citation
-
 Please cite our paper if using this code.
 
 ```
@@ -94,3 +93,6 @@ sh script/Table4_best_param_qwen3-embedding-8b_books.sh
 - Non-linear models
     - Interaction only: LightGCN, SimGCL
     - Interaction & LLM Semantics hybrid: RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL, AlphaRec
+
+### Acknowledgement
+We implemented our framework based on the following github repository: [RLMRec](https://github.com/HKUDS/RLMRec).
