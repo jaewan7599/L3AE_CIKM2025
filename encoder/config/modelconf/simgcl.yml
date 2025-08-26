@@ -1,0 +1,37 @@
+optimizer:
+  name: adam
+  lr: 1.0e-3
+  weight_decay: 0
+
+train:
+  epoch: 3000
+  batch_size: 4096
+  save_model: false
+  loss: pairwise
+  test_step: 1
+  reproducible: true
+  seed: 2023
+  patience: 20
+
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+
+data:
+  type: general_cf
+  name: amazon
+
+model:
+  name: simgcl
+  # general parameters here
+  keep_rate: 1.0
+  embedding_size: 32
+
+  # dataset-specific hyper-parameter here
+  layer_num: 3
+  reg_weight: 1.0e-5
+  eps: 0.9
+
+  cl_weight: 1.0e-1
+  cl_tau: 0.2

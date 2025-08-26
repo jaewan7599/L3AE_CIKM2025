@@ -1,0 +1,19 @@
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+  save_result_file: false
+
+train:
+  reproducible: true
+  seed: 2023
+  trainer: LinearTrainer
+
+data:
+  type: linear_cf
+  name: games
+
+model:
+  name: ease_text
+  # general parameters here
+  reg_F: 1

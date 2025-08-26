@@ -1,0 +1,11 @@
+torch
+torchdiffeq
+numpy
+pandas
+spicy
+transformers
+datasets
+einops
+accelerate
+ipython
+bs4

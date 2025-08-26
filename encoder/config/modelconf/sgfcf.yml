@@ -1,0 +1,25 @@
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+  save_result_file: false
+
+train:
+  reproducible: true
+  seed: 2023
+  trainer: LinearTrainer
+
+data:
+  type: linear_cf
+  name: games
+
+model:
+  name: sgfcf
+  # general parameters here
+  mu: 0
+  eps: 0.5
+  k: 100
+  beta: 0.5
+  beta_end: 2
+  gamma: 1.6
+  use_igf: true

@@ -1,0 +1,21 @@
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+  save_result_file: false
+
+train:
+  reproducible: true
+  seed: 2023
+  trainer: LinearTrainer
+
+data:
+  type: linear_cf
+  name: games
+
+model:
+  name: l3ae
+  # general parameters here
+  reg_X: 1
+  reg_F: 1
+  reg_E: 1

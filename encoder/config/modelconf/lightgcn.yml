@@ -1,0 +1,35 @@
+optimizer:
+  name: adam
+  lr: 1.0e-3
+  weight_decay: 0
+
+train:
+  epoch: 3000
+  batch_size: 4096
+  save_model: true
+  loss: pairwise
+  test_step: 1
+  reproducible: true
+  seed: 2023
+  patience: 20
+  num_negs: 1
+
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+  save_result_file: false
+
+data:
+  type: general_cf
+  name: games
+
+model:
+  name: lightgcn
+  # general parameters here
+  keep_rate: 1.0 # keep_rate: 0.8  
+  embedding_size: 32
+
+  # dataset-specific parameters here
+  layer_num: 2
+  reg_weight: 1.0e-4

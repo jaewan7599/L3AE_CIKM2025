@@ -1,0 +1,24 @@
+test:
+  metrics: [recall, ndcg]
+  k: [5, 10, 20, 50]
+  batch_size: 1024
+  save_result_file: false
+
+train:
+  reproducible: true
+  seed: 2023
+  trainer: LinearTrainer
+
+data:
+  type: linear_cf
+  name: games
+
+model:
+  name: bspm
+  merge: EM  # EM, LM
+  solver_shr: rk4  # rk4, euler
+  K_s: 1  # K_s: {1, 2, 3, 4}
+  T_s: 1.2  # T_s: [1, 5]
+  t_point_combination: True  # True, False
+  beta: 0.3  # beta: {0.0, 0.1, ..., 1.0}
+  factor_dim: 256
