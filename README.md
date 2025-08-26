@@ -38,8 +38,28 @@ conda activate L3AE
 ---
 
 ## Datasets
-- https://drive.google.com/file/d/1qRDWRMp5U86jwInnWT6OirsjT4UKhNE2/view?usp=sharing
+### Usage
+1. Create a data directory at the project root:
+   ```bash
+   mkdir -p data
+   ```
+2. Download the datasets and unzip them into the `data` directory.
+  - [Games](https://drive.google.com/file/d/1do9gCPqvxNXkf2J8nPfZkJrDkdPE3htz/view?usp=sharing), [Toys](https://drive.google.com/file/d/1nQiYUmIcJO5s1ZmGS-RH6Y524Y9LdHxC/view?usp=sharing), and [Books](https://drive.google.com/file/d/1juy8y3R_VIKqMwZ8mzgMtwNoinezq60x/view?usp=sharing)
 
+  After extraction, your directory structure look like:
+  ```bash
+  <project root>/
+    data/
+      games/
+      toys/
+      books/
+    encoder/
+    script/
+    README.md
+    requirements.txt
+    run_script.sh
+  ```
+  
 ---
 
 ## Reproducibility
