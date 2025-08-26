@@ -83,8 +83,14 @@ sh script/Table4_best_param_qwen3-embedding-8b_books.sh
 #### Arguments
 - See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` and `encoder/config/linear_configurator.py`.
 - dataset: Games, Toys, and Books (amazon 2023 datasets)
+  
 - linear models
-    - EASE, GF-CF, BSPM, SGFCF, Collective EASE, Addictive EASE, and **L^3AE**
-    - `L3AE_Collective` and `L3AE_Addictive` models are fusion variants of **L^3AE**.
+    - Interaction only: EASE, GF-CF, BSPM, SGFCF
+    - Interaction & Multi-hot encoding Hybrid: Collective EASE, Addictive EASE
+    - LLM Semantics only: EASE_Text, Text_Similarity
+    - Interaction & LLM Semantics Hybrid: **L^3AE**
+      - `L3AE_Collective` and `L3AE_Addictive` models are fusion variants of **L^3AE**.
+        
 - non-linear models
-    - LightGCN, SimGCL, RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL, AlphaRec
+    - Interaction only: LightGCN, SimGCL
+    - Interaction & LLM Semantics Hybrid: RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL, AlphaRec
