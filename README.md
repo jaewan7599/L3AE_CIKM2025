@@ -44,16 +44,14 @@ conda activate L3AE
 
 ## Reproducibility
 ### Usage
-- To reproduce the results of Table 1, go to the '' directory.
+- To reproduce the results of paper, run `run_script.sh` shell script file.
+- ```bash
+sh run_script.sh   
+```
 
-#### In terminal
-- Run the shell file for one of the datasets.
-
-#### Arguments (see more arguments in `parse.py`)
-- dataset: games, toys and books
+#### Arguments (See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` or `encoder/config/linear_configurator.py`)
+- dataset: games, toys, and books (amazon 2023 datasets)
 - linear models
-    - EASE, GF-CF, BSPM, SGFCF, CEASE, ADDEASE **L^3AE**
-- hyperparams1 (for specific models)
-    - 
-- hyperparams2
-    - [0.1, 0.2, ..., 0.9]
+    - EASE, GF-CF, BSPM, SGFCF, Collective EASE, Addictive EASE, and **L^3AE**
+- non-linear models
+    - LightGCN, SimGCL, RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL
