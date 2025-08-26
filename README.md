@@ -94,5 +94,5 @@ sh script/Table4_best_param_qwen3-embedding-8b_books.sh
     - Interaction only: LightGCN, SimGCL
     - Interaction & LLM Semantics hybrid: RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL, AlphaRec
 
-### Acknowledgement
+## Acknowledgement
 We implemented our framework based on the following github repository: [RLMRec](https://github.com/HKUDS/RLMRec).
