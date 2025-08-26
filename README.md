@@ -44,7 +44,7 @@ conda activate L3AE
 
 ## Reproducibility
 ### Usage
-- To reproduce the results of paper, run `run_script.sh` shell script file. This script file contains script lines as belows:
+- To reproduce the results of paper, run the `run_script.sh` shell script. This script contains the following lines:
 ```bash
 sh script/Table2_best_param_nv-embed-v2_games.sh
 sh script/Table2_best_param_nv-embed-v2_toys.sh
@@ -62,9 +62,10 @@ sh script/Table4_best_param_qwen3-embedding-8b_books.sh
 ```
 
 #### Arguments
-- See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` or `encoder/config/linear_configurator.py`.
-- dataset: games, toys, and books (amazon 2023 datasets)
+- See more arguments in `encoder/config/modelconf` for each model. You can also find arguments in `encoder/config/configurator.py` and `encoder/config/linear_configurator.py`.
+- dataset: Games, Toys, and Books (amazon 2023 datasets)
 - linear models
     - EASE, GF-CF, BSPM, SGFCF, Collective EASE, Addictive EASE, and **L^3AE**
+    - `L3AE_Collective` and `L3AE_Addictive` models are fusion variants of **L^3AE**.
 - non-linear models
-    - LightGCN, SimGCL, RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL
+    - LightGCN, SimGCL, RLMRec-Con-LightGCN, RLMRec-Gen-LightGCN, RLMRec-Con-SimGCL, RLMRec-Con-SimGCL, AlphaRec
