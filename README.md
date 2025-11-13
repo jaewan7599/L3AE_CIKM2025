@@ -14,7 +14,7 @@ Please cite our paper if using this code.
                Jongwuk Lee},
   title     = {LLM-Enhanced Linear Autoencoders for Recommendation},
   booktitle = {CIKM},
-  pages     = {to be updated},
+  pages     = {5036--5040},
   year      = {2025},
 }
 ```
